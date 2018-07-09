@@ -1,0 +1,36 @@
+<html lang="en">
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Sunflower:300" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tres en Raya</h1>
+    <div id="playing"></div>
+
+    <div id="board">
+        <div class="row">
+            <div class="box box-empty" data-row="1" data-column="1" data-diagonal1="1"></div>
+            <div class="box box-empty box-vb" data-row="1" data-column="2"></div>
+            <div class="box box-empty" data-row="1" data-column="3" data-diagonal2="1"></div>
+        </div>
+        <div class="row">
+            <div class="box box-empty box-hb" data-row="2" data-column="1"></div>
+            <div class="box box-empty box-hb box-vb" data-row="2" data-column="2" data-diagonal1="1" data-diagonal2="1"></div>
+            <div class="box box-empty box-hb" data-row="2" data-column="3"></div>
+        </div>
+        <div class="row">
+            <div class="box box-empty" data-row="3" data-column="1" data-diagonal2="1"></div>
+            <div class="box box-empty box-vb" data-row="3" data-column="2"></div>
+            <div class="box box-empty" data-row="3" data-column="3" data-diagonal1="1"></div>
+        </div>
+    </div>
+
+    <div><button id="new-game" class="hide" onclick="reloadPage()">Nueva Partida</button></div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

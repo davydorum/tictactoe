@@ -1,0 +1,91 @@
+@import 'nib/vendor'
+@import 'nib/gradients'
+
+vendor-prefixes = o ms moz webkit official
+
+// Colors
+main_color = #2C77B5
+
+// Fonts
+main = Sunflower
+titles = Indie Flower
+
+html
+    
+    body
+        background main_color
+        color white
+        font-family main
+        text-align center
+
+        h1
+            font-family titles
+            font-size 4em
+            margin 0.5em auto 0.2em auto
+
+        #board
+            display inline-block
+            margin 3em auto
+
+            .row
+                clear both
+                width 306px
+
+                .box
+                    display inline-block
+                    float left
+                    font-size 5em
+                    line-height 100px
+                    height 100px
+                    width 100px
+                    
+                .box-empty
+                    cursor pointer
+                    transition all 0.2s ease-out
+                    
+                    &:hover
+                        background rgba(white, 0.2)
+                    
+                .box-hb
+                    border-bottom 2px solid white
+                    border-top 2px solid white
+            
+                .box-vb
+                    border-left 2px solid white
+                    border-right 2px solid white
+                    
+                .box-winner
+                    background rgba(white, 0.2)
+            
+        #playing
+            font-size 1.5em
+            
+        #new-game
+            background main_color
+            border 1px solid white
+            border-radius 5px
+            color white
+            cursor pointer
+            font-family main
+            font-size 1.2em
+            padding 1em
+            transition all 0.2s ease-out
+            
+            &:hover
+                box-shadow 0 0 3px rgba(white, 0.8)
+                text-shadow 0 0 3px rgba(white, 0.8)
+            
+        #new-game.hide
+            display none
+        
+    select
+        background white
+        border 1px solid #7cd1f9
+        border-radius 5px
+        font-family Sunflower
+        height 3em
+        margin 0 0.3em
+        padding 0.5em 1em
+        
+        option
+            padding 0.5em
