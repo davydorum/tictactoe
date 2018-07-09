@@ -1,6 +1,6 @@
 # TIC TAC TOE
 
-Versión del popular juego realizada como desafío para el [Curso de Fundamentos de Javascript](https://platzi.com/js) de [Platzi](https://platzi.com)
+Versión del popular juego realizada como desafío para el [Curso de Fundamentos de Javascript](https://platzi.com/js) de [Platzi](https://platzi.com). Si quieres, [puedes jugar una partida](https://davydorum.github.io/tictactoe/)
 
 ## Modo 1 Jugador o 2 Jugadores
 
